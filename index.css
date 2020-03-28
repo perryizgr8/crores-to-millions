@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    background-color: darkgray;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.relative {
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

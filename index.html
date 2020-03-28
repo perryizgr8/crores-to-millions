@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <title>Crores-To-Millions</title>
+    </head>
+    <body>
+        <h1>Crores-To-Millions</h1>
+        <div id="main-area" class="relative">
+        <div id="indian" class="center">
+            <input type="number" id="indian-value" name="indian-value" oninput="convert_indian()">
+            <br>
+            <select id="indian-names" class="relative" onchange="convert_indian()">
+                <option value="100000">LAKH</option>
+                <option value="10000000">CRORE</option>
+                <option value="1000000000000">LAKH CRORE</option>
+            </select>
+        </div>
+        <div id="separator">
+            <p class="center">
+                <span>
+                    <img src="icons/chevrons-down.svg">
+                    <img src="icons/chevrons-up.svg">
+                </span>
+            </p>
+        </div>
+        <div id="american" class="center">
+            <input type="number" id="american-value" name="american-value" oninput="convert_american()">
+            <br>
+            <select id="american-names" class="relative" onchange="convert_american()">
+                <option value="1000000">MILLION</option>
+                <option value="1000000000">BILLION</option>
+                <option value="1000000000000">TRILLION</option>
+            </select>
+        </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
